@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="total day minutes <= 263.55\ngini = 0.246\nsamples = 2499\nvalue = [2140, 359]\nclass = churn", fillcolor="#e9965a"] ;
+1 [label="customer service calls <= 3.5\ngini = 0.197\nsamples = 2330\nvalue = [2072, 258]\nclass = churn", fillcolor="#e89152"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="international plan_yes <= 0.5\ngini = 0.14\nsamples = 2146\nvalue = [1983, 163]\nclass = churn", fillcolor="#e78b49"] ;
+1 -> 2 ;
+3 [label="gini = 0.09\nsamples = 1958\nvalue = [1865, 93]\nclass = churn", fillcolor="#e68743"] ;
+2 -> 3 ;
+4 [label="gini = 0.467\nsamples = 188\nvalue = [118, 70]\nclass = churn", fillcolor="#f4ccae"] ;
+2 -> 4 ;
+5 [label="total day charge <= 27.285\ngini = 0.499\nsamples = 184\nvalue = [89, 95]\nclass = non-churn", fillcolor="#f2f9fd"] ;
+1 -> 5 ;
+6 [label="gini = 0.193\nsamples = 74\nvalue = [8, 66]\nclass = non-churn", fillcolor="#51a9e8"] ;
+5 -> 6 ;
+7 [label="gini = 0.388\nsamples = 110\nvalue = [81.0, 29.0]\nclass = churn", fillcolor="#eeae80"] ;
+5 -> 7 ;
+8 [label="voice mail plan_yes <= 0.5\ngini = 0.481\nsamples = 169\nvalue = [68.0, 101.0]\nclass = non-churn", fillcolor="#bedff7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="total eve charge <= 15.735\ngini = 0.344\nsamples = 127\nvalue = [28, 99]\nclass = non-churn", fillcolor="#71b9ec"] ;
+8 -> 9 ;
+10 [label="gini = 0.489\nsamples = 40\nvalue = [23, 17]\nclass = churn", fillcolor="#f8decb"] ;
+9 -> 10 ;
+11 [label="gini = 0.108\nsamples = 87\nvalue = [5, 82]\nclass = non-churn", fillcolor="#45a3e7"] ;
+9 -> 11 ;
+12 [label="total night calls <= 131.0\ngini = 0.091\nsamples = 42\nvalue = [40, 2]\nclass = churn", fillcolor="#e68743"] ;
+8 -> 12 ;
+13 [label="gini = 0.048\nsamples = 41\nvalue = [40, 1]\nclass = churn", fillcolor="#e6843e"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = non-churn", fillcolor="#399de5"] ;
+12 -> 14 ;
+}
